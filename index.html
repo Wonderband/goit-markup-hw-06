@@ -397,17 +397,20 @@
           </ul>
         </div>
         <form class="footer-form">
-          <Label for="email"></Label>
-            <p class="headline-social">підпишіться на розсилку</p>           
-            <input type="email" name="email" class="footer-input" id="email" placeholder="E-mail"/>          
-          <button type="submit" class="big-button plane">
-            <span class="subscribe">
-              Підписатися
-              <svg class="icon-send">
-                <use href="./images/sprite.svg#plane"></use>
-              </svg>
-            </span>
-          </button>
+          <p class="headline-social">підпишіться на розсилку</p> 
+          <div class="footer-form-wrapper">
+            <Label for="email">
+              <input type="email" name="email" class="footer-input" id="email" placeholder="E-mail"/>
+            </Label>
+            <button type="submit" class="big-button plane">          
+              <span class="subscribe">
+                Підписатися
+                <svg class="icon-send">
+                  <use href="./images/sprite.svg#plane"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
@@ -444,8 +447,9 @@
           <label class="input-label" for="comment">Коментар</label>
           <textarea name="comment" id="comment" class="text-comment" rows="5" 
           placeholder="Введіть текст..."></textarea>   
-          <div class="agree-container">
-            <input type="checkbox" name="agree" class="checkbox" id="agree" value="true" checked/>  
+          <div class="agree-container">            
+          <label class="agree-label" for="agree">
+            <input type="checkbox" name="agree" class="checkbox" id="agree" value="true" checked/>
             <div class="unchecked-box">
               <svg class="icon-check">
                 <use href="./images/sprite.svg#unchecked"></use>
@@ -455,11 +459,11 @@
               <svg class="icon-check">
                 <use href="./images/sprite.svg#check"></use>
               </svg>
-            </div>          
-                          
-            <label class="agree-label" for="agree">
-              Погоджуюся з розсилкою та приймаю  <a href="" class="link">Умови договору</a>
-            </label> 
+            </div>           
+            <span>
+              Погоджуюся з розсилкою та приймаю <a href="" class="simple-link">Умови договору </a>
+            </span>
+          </label> 
           </div>  
           <button type="submit" class="big-button send">Відправити</button>               
         </form>

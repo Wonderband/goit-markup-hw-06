@@ -544,16 +544,16 @@ h1, h2, h3, h4, h5, h6, p, input {
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: var(--white-color);
-      margin: 0 0 20px;  }
-
-  .footer-form {
-   align-self: center;   
+      margin: 0 0 20px;  
+   }
+ 
+  .footer-form-wrapper {
+      display: flex;
   }
 
   .footer-input {
    width: 358px;
-   height: 50px;
-   margin-right: 8px;
+   height: 50px;   
    background-color: transparent;
    border: 1px solid rgba(255, 255, 255, 0.3);
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -581,6 +581,7 @@ h1, h2, h3, h4, h5, h6, p, input {
 
   .big-button.plane {
    padding: 10px 28px;
+   margin-left: 12px;
   }
 
   .icon-send {
@@ -639,6 +640,10 @@ h1, h2, h3, h4, h5, h6, p, input {
    cursor: pointer;
   }
 
+  .close-button:hover {   
+   color: var(--accent-color);
+  }
+
   .icon-close {
    width: 18px;
    height: 18px;
@@ -651,8 +656,6 @@ h1, h2, h3, h4, h5, h6, p, input {
   }
 
  .form-headline {   
-   display: block;
-   font-weight: 700;
    font-size: 20px;
    line-height: 1.15;  
    text-align: center; 
@@ -732,17 +735,20 @@ h1, h2, h3, h4, h5, h6, p, input {
 
   .agree-container {
    display:flex;
-   justify-content: center;
-   align-items: center;
-   gap: 7px;
+   justify-content: center;   
    margin: 20px 0 30px;   
   }
 
   .agree-label {
+   display:flex;
+   align-items: center;
+   align-items: center;
+   gap: 7px;
    font-weight: 400;
    font-size: 14px;
    line-height: 1.714;
-   color: #757575;   
+   letter-spacing: 0.03em;
+   color: #757575;    
   }
 
   #agree {
@@ -777,6 +783,12 @@ h1, h2, h3, h4, h5, h6, p, input {
    width: 16px;
    height: 15px;
    fill: white;
+  }
+
+  .simple-link {
+   color: var(--accent-color);
+   text-underline-position: under;
+
   }
 
   .big-button.send {
