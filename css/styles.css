@@ -751,44 +751,34 @@ h1, h2, h3, h4, h5, h6, p, input {
    color: #757575;    
   }
 
-  #agree {
+  .checkbox {
    appearance: none;
    position: absolute;
-  }
-
-  .checkbox:checked + .unchecked-box {
-   display: none;
-  }
-
-  .checkbox:not(:checked) ~ .checked-box {
-   display: none;
-  }
-
-  .unchecked-box {
-   display: inline-block;
-   width: 16px;
-   height: 15px;
-  }
-
-  .checked-box {
-   position: relative;
-   display: inline-block;
-   width: 16px;
-   height: 15px;
-   background-color: #2196F3;
-   border-radius: 2px;
   }
 
   .icon-check {   
    width: 16px;
    height: 15px;
    fill: white;
+   transition: background-color var(--transition-speed), border-radius var(--transition-speed);
   }
 
+  .checkbox:checked + .icon-check {
+   background-color: var(--accent-color);
+   border-radius: 2px;
+  }
+
+  .checkbox:checked + .icon-check .unchecked{
+   opacity: 0;
+  }
+
+  .icon-check .unchecked {
+   transition: opacity var(--transition-speed);   
+  }
+  
   .simple-link {
    color: var(--accent-color);
    text-underline-position: under;
-
   }
 
   .big-button.send {

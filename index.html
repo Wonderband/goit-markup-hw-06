@@ -448,18 +448,12 @@
           <textarea name="comment" id="comment" class="text-comment" rows="5" 
           placeholder="Введіть текст..."></textarea>   
           <div class="agree-container">            
-          <label class="agree-label" for="agree">
-            <input type="checkbox" name="agree" class="checkbox" id="agree" value="true" checked/>
-            <div class="unchecked-box">
-              <svg class="icon-check">
-                <use href="./images/sprite.svg#unchecked"></use>
-              </svg>
-            </div>
-            <div class="checked-box">
-              <svg class="icon-check">
-                <use href="./images/sprite.svg#check"></use>
-              </svg>
-            </div>           
+          <label class="agree-label">
+            <input type="checkbox" name="agree" class="checkbox" checked/>
+            <svg class="icon-check">
+              <use href="./images/sprite.svg#check" class="checked"></use>
+              <use href="./images/sprite.svg#unchecked" class="unchecked"></use>
+            </svg>                    
             <span>
               Погоджуюся з розсилкою та приймаю <a href="" class="simple-link">Умови договору </a>
             </span>
